@@ -5,195 +5,273 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Para Mi Mujer Minera ❤️</title>
+<!DOCTYPE html>
 
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de la Mujer Minera ❤️</title>
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-body{
-    margin:0;
-    background:#fef6f0;
-    font-family:'Poppins',sans-serif;
-    color:#444;
-}
-
-.portada{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    position:relative;
-}
-
-.portada img{
-    width:420px;
-    max-width:90%;
-    border-radius:25px;
-    box-shadow:0 15px 40px rgba(0,0,0,.2);
-}
-
-.titulo{
-    margin-top:25px;
-    font-size:3rem;
-    font-family:'Dancing Script',cursive;
-    color:#c2185b;
-}
-
-.carta{
-    max-width:850px;
-    margin:80px auto;
-    background:white;
-    padding:60px;
-    border-radius:20px;
-    box-shadow:0 10px 40px rgba(0,0,0,.1);
-    line-height:2;
-}
-
-.carta h2{
-    text-align:center;
-    font-family:'Dancing Script',cursive;
-    font-size:3rem;
-    color:#c2185b;
-}
-
-.texto{
-    font-size:1.15rem;
-}
-
-.firma{
-    margin-top:50px;
-    text-align:right;
-    font-family:'Dancing Script',cursive;
-    font-size:2.5rem;
-    color:#c2185b;
-}
-
-.final{
-    text-align:center;
-    padding:50px;
-}
-
-.final img{
-    width:420px;
-    max-width:90%;
-    border-radius:25px;
-    box-shadow:0 15px 40px rgba(0,0,0,.2);
-}
-
-.frase{
-    margin-top:20px;
-    font-family:'Dancing Script',cursive;
-    font-size:2rem;
-    color:#c2185b;
-}
-
-.corazon{
-    position:fixed;
-    color:#ff5c8a;
-    animation:flotar 8s linear infinite;
-}
-
-@keyframes flotar{
-    from{
-        transform:translateY(100vh);
-        opacity:1;
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
     }
-    to{
-        transform:translateY(-100px);
-        opacity:0;
+
+    body{
+        background:linear-gradient(180deg,#fff7f9,#fef6f0);
+        font-family:'Poppins',sans-serif;
+        color:#444;
+        padding:20px;
+        overflow-x:hidden;
+        min-height:100vh;
     }
-}
+
+    .contenedor{
+        max-width:900px;
+        margin:auto;
+    }
+
+    .titulo{
+        text-align:center;
+        font-family:'Dancing Script',cursive;
+        font-size:clamp(2.8rem,8vw,4.8rem);
+        color:#c2185b;
+        margin-top:25px;
+        margin-bottom:10px;
+    }
+
+    .subtitulo{
+        text-align:center;
+        color:#777;
+        font-size:1.1rem;
+        margin-bottom:40px;
+    }
+
+    .portada{
+        display:flex;
+        justify-content:center;
+        margin-bottom:45px;
+    }
+
+    .foto-polaroid{
+        background:white;
+        padding:12px 12px 40px;
+        border-radius:8px;
+        width:min(100%,450px);
+        box-shadow:0 20px 40px rgba(0,0,0,.15);
+        transform:rotate(-2deg);
+    }
+
+    .foto-polaroid img{
+        width:100%;
+        display:block;
+        border-radius:5px;
+    }
+
+    .carta{
+        background:white;
+        padding:50px;
+        border-radius:25px;
+        box-shadow:0 10px 35px rgba(0,0,0,.08);
+        position:relative;
+    }
+
+    .carta::before{
+        content:"💌";
+        position:absolute;
+        top:-22px;
+        left:50%;
+        transform:translateX(-50%);
+        font-size:2rem;
+    }
+
+    .carta h2{
+        text-align:center;
+        font-family:'Dancing Script',cursive;
+        font-size:clamp(2.3rem,6vw,3.5rem);
+        color:#c2185b;
+        margin-bottom:30px;
+    }
+
+    .texto{
+        font-size:1.1rem;
+        line-height:2;
+        text-align:justify;
+    }
+
+    .texto p{
+        margin-bottom:20px;
+    }
+
+    .firma{
+        margin-top:45px;
+        text-align:right;
+        font-family:'Dancing Script',cursive;
+        font-size:clamp(2rem,5vw,3rem);
+        color:#c2185b;
+    }
+
+    .frase-final{
+        text-align:center;
+        margin-top:50px;
+        margin-bottom:30px;
+        font-family:'Dancing Script',cursive;
+        font-size:clamp(2rem,6vw,3rem);
+        color:#c2185b;
+        line-height:1.5;
+    }
+
+    .corazon{
+        position:fixed;
+        color:#ff5c8a;
+        pointer-events:none;
+        z-index:-1;
+        animation:flotar linear forwards;
+    }
+
+    @keyframes flotar{
+        from{
+            transform:translateY(100vh);
+            opacity:1;
+        }
+        to{
+            transform:translateY(-100px);
+            opacity:0;
+        }
+    }
+
+    @media (max-width:768px){
+
+        body{
+            padding:15px;
+        }
+
+        .carta{
+            padding:30px 22px;
+        }
+
+        .texto{
+            text-align:left;
+            font-size:1rem;
+        }
+
+        .firma{
+            text-align:center;
+        }
+
+        .foto-polaroid{
+            transform:none;
+        }
+
+    }
 
 </style>
+```
 
 </head>
 
 <body>
 
-
-
-<section class="carta">
-
-<h2>Para Ti</h2>
-
-<section class="portada">
-
 ```
-<img src="foto1.jpg">
+<div class="contenedor">
 
-<div class="titulo">
-    Feliz Día de la Mujer Minera ❤️
+    <div class="titulo">
+        Feliz Día de la Mujer Minera
+    </div>
+
+    <div class="subtitulo">
+        Anita, la mujer que más admiro ❤️
+    </div>
+
+    <section class="portada">
+
+        <div class="foto-polaroid">
+            <img src="foto1.jpg" alt="Nuestra foto">
+        </div>
+
+    </section>
+
+    <section class="carta">
+
+        <h2>Para Ti ❤️</h2>
+
+        <div class="texto">
+
+            <p>
+                Hoy quiero dedicarte estas palabras porque admiro profundamente la mujer que eres.
+            </p>
+
+            <p>
+                Admiro tu fortaleza, tu dedicación, tu valentía y la pasión con la que enfrentas cada desafío. Cada día demuestras que no existen metas imposibles cuando se trabaja con esfuerzo, compromiso y corazón.
+            </p>
+
+            <p>
+                Sé que el camino no siempre es sencillo, pero también sé que eres capaz de iluminar incluso los días más difíciles con tu sonrisa, tu perseverancia y esa energía tan especial que te caracteriza.
+            </p>
+
+            <p>
+                Hoy se celebra a la mujer minera, pero yo quiero celebrar algo aún más importante: a la mujer maravillosa que alegra mis días, que inspira mis sueños y que ocupa un lugar muy especial en mi corazón.
+            </p>
+
+            <p>
+                Gracias por cada momento compartido, por tu cariño, por tu apoyo y por ser exactamente como eres.
+            </p>
+
+            <p>
+                Nunca olvides que detrás de cada uno de tus logros existe alguien que se siente inmensamente orgulloso de ti, que admira todo lo que haces y que desea verte cumplir cada uno de tus sueños.
+            </p>
+
+            <p>
+                Que sigas brillando con la misma fuerza con la que enfrentas cada reto y que nunca dudes de lo extraordinaria que eres.
+            </p>
+
+        </div>
+
+        <div class="firma">
+            Con todo mi amor,<br>
+            Rodrigo ❤️
+        </div>
+
+    </section>
+
+    <div class="frase-final">
+        Mi mayor tesoro no está en una mina,<br>
+        está en ti ✨
+    </div>
+
 </div>
-```
-
-</section>
-    
-<div class="texto">
-
-Hoy quiero dedicarte estas palabras porque admiro profundamente
-la mujer que eres.
-
-Admiro tu fortaleza, tu dedicación, tu valentía y la pasión
-con la que enfrentas cada desafío.
-
-Sé que el camino no siempre es sencillo, pero también sé que
-eres capaz de iluminar incluso los días más difíciles.
-
-Hoy celebran a la mujer minera, pero yo celebro mucho más:
-celebro a la mujer que me hace sonreír, la mujer que inspira
-mis días y que ocupa un lugar muy especial en mi corazón.
-
-Gracias por cada momento compartido, por tu cariño y por la
-persona maravillosa que eres.
-
-Nunca olvides que detrás de cada uno de tus logros existe alguien
-que se siente inmensamente orgulloso de ti.
-
-</div>
-
-<div class="firma">
-Con todo mi amor Rodrigo❤️
-</div>
-
-</section>
-
-<section class="final">
-
-```
-
-<div class="frase">
-    Mi mayor tesoro no está en una mina,
-    está en ti ✨
-</div>
-```
-
-</section>
 
 <script>
 
-function crearCorazon(){
+    function crearCorazon(){
 
-    const c = document.createElement('div');
+        const corazon = document.createElement('div');
 
-    c.classList.add('corazon');
+        corazon.classList.add('corazon');
+        corazon.innerHTML = '❤️';
 
-    c.innerHTML='❤️';
+        corazon.style.left = Math.random() * 100 + 'vw';
+        corazon.style.fontSize = (15 + Math.random() * 20) + 'px';
+        corazon.style.animationDuration = (6 + Math.random() * 4) + 's';
 
-    c.style.left=Math.random()*100+'vw';
+        document.body.appendChild(corazon);
 
-    c.style.fontSize=(20+Math.random()*20)+'px';
+        setTimeout(() => {
+            corazon.remove();
+        }, 10000);
+    }
 
-    document.body.appendChild(c);
-
-    setTimeout(()=>c.remove(),8000);
-
-}
-
-setInterval(crearCorazon,600);
+    setInterval(crearCorazon, 700);
 
 </script>
+```
 
 </body>
 </html>
