@@ -257,29 +257,46 @@
 
 </div>
 
-    <div class="corazon-prueba">❤️</div>
     
 <script>
 
-    function crearCorazon(){
+  <script>
 
-        const corazon = document.createElement('div');
+function crearCorazon() {
 
-        corazon.classList.add('corazon');
-        corazon.innerHTML = '❤️';
+    const corazon = document.createElement("div");
 
-        corazon.style.left = Math.random() * 100 + 'vw';
-        corazon.style.fontSize = (15 + Math.random() * 20) + 'px';
-        corazon.style.animationDuration = (6 + Math.random() * 4) + 's';
+    corazon.innerHTML = "❤️";
 
-        document.body.appendChild(corazon);
+    corazon.style.position = "fixed";
+    corazon.style.left = Math.random() * window.innerWidth + "px";
+    corazon.style.bottom = "-50px";
+    corazon.style.fontSize = "30px";
+    corazon.style.zIndex = "9999";
+    corazon.style.pointerEvents = "none";
 
-        setTimeout(() => {
+    document.body.appendChild(corazon);
+
+    let posicion = -50;
+
+    const animacion = setInterval(() => {
+
+        posicion += 3;
+
+        corazon.style.bottom = posicion + "px";
+
+        if (posicion > window.innerHeight + 50) {
+            clearInterval(animacion);
             corazon.remove();
-        }, 10000);
-    }
+        }
 
-    setInterval(crearCorazon, 300);
+    }, 20);
+
+}
+
+setInterval(crearCorazon, 800);
+
+</script>
 
 </script>
 
