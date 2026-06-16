@@ -262,6 +262,7 @@
 
   <script>
 
+
 function crearCorazon() {
 
     const corazon = document.createElement("div");
@@ -269,32 +270,28 @@ function crearCorazon() {
     corazon.innerHTML = "❤️";
 
     corazon.style.position = "fixed";
-    corazon.style.left = Math.random() * window.innerWidth + "px";
-    corazon.style.bottom = "-50px";
-    corazon.style.fontSize = "30px";
-    corazon.style.zIndex = "9999";
+    corazon.style.left = Math.random() * 100 + "vw";
+    corazon.style.top = "110vh";
+    corazon.style.fontSize = (20 + Math.random() * 15) + "px";
     corazon.style.pointerEvents = "none";
+    corazon.style.zIndex = "9999";
+    corazon.style.opacity = "0.8";
+    corazon.style.transition = "transform 8s linear, opacity 8s linear";
 
     document.body.appendChild(corazon);
 
-    let posicion = -50;
+    setTimeout(() => {
+        corazon.style.transform = "translateY(-130vh)";
+        corazon.style.opacity = "0";
+    }, 50);
 
-    const animacion = setInterval(() => {
-
-        posicion += 3;
-
-        corazon.style.bottom = posicion + "px";
-
-        if (posicion > window.innerHeight + 50) {
-            clearInterval(animacion);
-            corazon.remove();
-        }
-
-    }, 20);
-
+    setTimeout(() => {
+        corazon.remove();
+    }, 8000);
 }
 
 setInterval(crearCorazon, 800);
+
 
 </script>
 
