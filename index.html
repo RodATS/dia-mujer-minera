@@ -1,301 +1,630 @@
 <!DOCTYPE html>
-
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Día de la Mujer Minera ❤️</title>
-
+<title>Para ti ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-    }
-
-    body{
-        background:linear-gradient(180deg,#fff7f9,#fef6f0);
-        font-family:'Poppins',sans-serif;
-        color:#444;
-        padding:20px;
-        overflow-x:hidden;
-        min-height:100vh;
-    }
-
-    .contenedor{
-        max-width:900px;
-        margin:auto;
-    }
-
-    .titulo{
-        text-align:center;
-        font-family:'Dancing Script',cursive;
-        font-size:clamp(2.8rem,8vw,4.8rem);
-        color:#c2185b;
-        margin-top:25px;
-        margin-bottom:10px;
-    }
-
-    .subtitulo{
-        text-align:center;
-        color:#777;
-        font-size:1.1rem;
-        margin-bottom:40px;
-    }
-
-    .portada{
-        display:flex;
-        justify-content:center;
-        margin-bottom:45px;
-    }
-
-    .foto-polaroid{
-        background:white;
-        padding:12px 12px 40px;
-        border-radius:8px;
-        width:min(100%,450px);
-        box-shadow:0 20px 40px rgba(0,0,0,.15);
-        transform:rotate(-2deg);
-    }
-
-    .foto-polaroid img{
-        width:100%;
-        display:block;
-        border-radius:5px;
-    }
-
-    .carta{
-        background:white;
-        padding:50px;
-        border-radius:25px;
-        box-shadow:0 10px 35px rgba(0,0,0,.08);
-        position:relative;
-    }
-
-    .carta::before{
-        content:"💌";
-        position:absolute;
-        top:-22px;
-        left:50%;
-        transform:translateX(-50%);
-        font-size:2rem;
-    }
-
-    .carta h2{
-        text-align:center;
-        font-family:'Dancing Script',cursive;
-        font-size:clamp(2.3rem,6vw,3.5rem);
-        color:#c2185b;
-        margin-bottom:30px;
-    }
-
-    .texto{
-        font-size:1.1rem;
-        line-height:2;
-        text-align:justify;
-    }
-
-    .texto p{
-        margin-bottom:20px;
-    }
-
-    .firma{
-        margin-top:45px;
-        text-align:right;
-        font-family:'Dancing Script',cursive;
-        font-size:clamp(2rem,5vw,3rem);
-        color:#c2185b;
-    }
-
-    .frase-final{
-        text-align:center;
-        margin-top:50px;
-        margin-bottom:30px;
-        font-family:'Dancing Script',cursive;
-        font-size:clamp(2rem,6vw,3rem);
-        color:#c2185b;
-        line-height:1.5;
-    }
-
-    .corazon{
-        position:fixed;
-        color:#ff5c8a;
-        pointer-events:none;
-        z-index:999;
-        animation:flotar linear forwards;
-        opacity: 0.4;
-    }
-
-    .corazon-prueba{
-    position:fixed;
-    top:100px;
-    right:50px;
-    font-size:40px;
-    z-index:9999;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-    @keyframes flotar{
-        from{
-            transform:translateY(100vh);
-            opacity:1;
-        }
-        to{
-            transform:translateY(-100px);
-            opacity:0;
-        }
+
+body{
+
+    background:
+    linear-gradient(180deg,#fff5f8,#fffaf2);
+
+    font-family:'Poppins',sans-serif;
+    color:#444;
+
+    padding:20px;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+
+.contenedor{
+
+    max-width:900px;
+    margin:auto;
+
+}
+
+
+.titulo{
+
+    text-align:center;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:clamp(2.5rem,8vw,4.5rem);
+
+    color:#c2185b;
+
+    margin-top:20px;
+
+    line-height:1.2;
+
+}
+
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#777;
+
+    margin:20px auto 40px;
+
+    max-width:600px;
+
+}
+
+
+.portada{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+
+.foto-polaroid{
+
+    background:white;
+
+    padding:12px 12px 35px;
+
+    width:min(100%,420px);
+
+    border-radius:12px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+    transform:rotate(-2deg);
+
+}
+
+
+.foto-polaroid img{
+
+    width:100%;
+
+    border-radius:8px;
+
+}
+
+
+
+.carta{
+
+    margin-top:45px;
+
+    background:white;
+
+    padding:clamp(25px,6vw,55px);
+
+    border-radius:25px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    position:relative;
+
+}
+
+
+
+.carta::before{
+
+    content:"💌";
+
+    position:absolute;
+
+    top:-25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:2rem;
+
+}
+
+
+
+.carta h2{
+
+    text-align:center;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:clamp(2rem,7vw,3.5rem);
+
+    color:#c2185b;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.texto{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
+
+
+
+.texto p{
+
+    margin-bottom:22px;
+
+}
+
+
+
+.firma{
+
+    margin-top:40px;
+
+    text-align:right;
+
+    font-family:'Dancing Script',cursive;
+
+    color:#c2185b;
+
+    font-size:2.5rem;
+
+}
+
+
+
+.frase-final{
+
+    text-align:center;
+
+    margin:50px 10px;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:clamp(2rem,7vw,3.2rem);
+
+    color:#c2185b;
+
+}
+
+
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#c2185b;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:30px;
+
+    font-size:1rem;
+
+    box-shadow:0 8px 20px rgba(194,24,91,.3);
+
+}
+
+
+
+#mensajeMotivador{
+
+    margin-top:25px;
+
+    min-height:50px;
+
+    font-size:1.2rem;
+
+    color:#c2185b;
+
+    font-weight:500;
+
+}
+
+
+
+.corazon{
+
+    position:fixed;
+
+    bottom:-50px;
+
+    z-index:999;
+
+    pointer-events:none;
+
+    animation:subir 8s linear forwards;
+
+}
+
+
+
+@keyframes subir{
+
+    from{
+
+        transform:translateY(0);
+
+        opacity:1;
+
     }
 
-    @media (max-width:768px){
 
-        body{
-            padding:15px;
-        }
+    to{
 
-        .carta{
-            padding:30px 22px;
-        }
+        transform:translateY(-120vh);
 
-        .texto{
-            text-align:left;
-            font-size:1rem;
-        }
-
-        .firma{
-            text-align:center;
-        }
-
-        .foto-polaroid{
-            transform:none;
-        }
+        opacity:0;
 
     }
+
+}
+
+
+
+@media(max-width:600px){
+
+
+body{
+
+    padding:12px;
+
+}
+
+
+.titulo{
+
+    font-size:2.4rem;
+
+}
+
+
+.texto{
+
+    font-size:.95rem;
+
+    text-align:left;
+
+}
+
+
+.firma{
+
+    text-align:center;
+
+}
+
+
+.carta{
+
+    border-radius:20px;
+
+}
+
+
+}
 
 </style>
 
 
 </head>
 
+
+
 <body>
+
 
 
 <div class="contenedor">
 
-    <div class="titulo">
-        Feliz Día de la Mujer Minera
-    </div>
 
-    <div class="subtitulo">
-        Anita, la mujer que más admiro ❤️
-    </div>
 
-    <section class="portada">
+<div class="titulo">
 
-        <div class="foto-polaroid">
-            <img src="foto1.jpg" alt="Nuestra foto">
-        </div>
-
-    </section>
-
-    <section class="carta">
-
-        <h2>Para Ti ❤️</h2>
-
-        <div class="texto">
-
-            <p>
-                Hoy quiero dedicarte estas palabras porque admiro profundamente la mujer que eres.
-            </p>
-
-            <p>
-                Admiro tu fortaleza, tu dedicación, tu valentía y la pasión con la que enfrentas cada desafío. Cada día demuestras que no existen metas imposibles cuando se trabaja con esfuerzo, compromiso y corazón.
-            </p>
-
-            <p>
-                Sé que el camino no siempre es sencillo, pero también sé que eres capaz de iluminar incluso los días más difíciles con tu sonrisa, tu perseverancia y esa energía tan especial que te caracteriza.
-            </p>
-
-            <p>
-                Hoy se celebra a la mujer minera, pero yo quiero celebrar algo aún más importante: a la mujer maravillosa que alegra mis días, que inspira mis sueños y que ocupa un lugar muy especial en mi corazón.
-            </p>
-
-            <p>
-                Gracias por cada momento compartido, por tu cariño, por tu apoyo y por ser exactamente como eres.
-            </p>
-
-            <p>
-                Nunca olvides que detrás de cada uno de tus logros existe alguien que se siente inmensamente orgulloso de ti, que admira todo lo que haces y que desea verte cumplir cada uno de tus sueños.
-            </p>
-
-            <p>
-                Que sigas brillando con la misma fuerza con la que enfrentas cada reto y que nunca dudes de lo extraordinaria que eres.
-            </p>
-
-        </div>
-
-        <div class="firma">
-            Con todo mi amor,<br>
-            Rodrigo ❤️
-        </div>
-
-    </section>
-
-    <div class="frase-final">
-        Mi mayor tesoro no está en una mina,<br>
-        está en ti ✨
-    </div>
+Para la mujer que sigue luchando ❤️
 
 </div>
 
-    
+
+<div class="subtitulo">
+
+Un pequeño lugar para recordarte lo mucho que vales cuando el día sea difícil
+
+</div>
+
+
+
+<div class="portada">
+
+
+<div class="foto-polaroid">
+
+<img src="foto1.jpg">
+
+</div>
+
+
+</div>
+
+
+
+
+
+<section class="carta">
+
+
+<h2>Para ti ❤️</h2>
+
+
+<div class="texto">
+
+
+<p>
+Sé que estos días no han sido fáciles.
+</p>
+
+
+<p>
+Sé que a veces duele ver que otras personas parecen tener caminos más sencillos, más oportunidades o más seguridad.
+</p>
+
+
+<p>
+Y quiero que recuerdes algo: tu historia no vale menos por no tener los mismos caminos que los demás.
+</p>
+
+
+<p>
+Hay cosas que nadie puede regalarte:
+tu esfuerzo, tu disciplina, tu inteligencia y la forma en que sigues adelante incluso cuando las cosas pesan.
+</p>
+
+
+<p>
+Quizás hoy tengas dudas.
+Quizás hoy te sientas cansada.
+Y está bien sentirlo.
+</p>
+
+
+<p>
+No tienes que demostrar tu valor todos los días para que yo pueda verlo.
+</p>
+
+
+<p>
+Yo veo tu dedicación.
+Veo cuánto te esfuerzas.
+Veo la persona increíble que eres.
+</p>
+
+
+<p>
+Las oportunidades pueden abrir puertas, pero lo que realmente construye un camino es la persona que eres.
+</p>
+
+
+<p>
+Estoy orgulloso de ti no solo cuando ganas, sino también cuando sigues intentando.
+</p>
+
+
+<p>
+Si algún día dudas de ti, vuelve aquí y recuerda:
+nunca has estado sola.
+</p>
+
+
+
+</div>
+
+
+
+<div class="firma">
+
+Siempre contigo ❤️<br>
+
+Rodrigo
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="carta">
+
+
+<h2>Cosas que admiro de ti ✨</h2>
+
+
+<div class="texto">
+
+
+<p>
+Aquí puedes poner tus propias frases ❤️
+</p>
+
+
+<p>
+✨ Admiro la forma en que...
+</p>
+
+
+<p>
+✨ Me encanta cuando...
+</p>
+
+
+<p>
+✨ Nunca dejo de sorprenderme por...
+</p>
+
+
+<p>
+✨ Estoy orgulloso de ti porque...
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section style="text-align:center;margin:50px 0;">
+
+
+<button id="btn">
+
+Recuérdame quién soy ❤️
+
+</button>
+
+
+<div id="mensajeMotivador"></div>
+
+
+</section>
+
+
+
+
+
+<div class="frase-final">
+
+
+Tu valor no depende de una oportunidad,<br>
+
+porque ya eres extraordinaria ❤️
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
 <script>
 
 
+const mensajes=[
 
-function crearCorazon() {
+"Eres más fuerte de lo que imaginas ❤️",
 
-    const corazon = document.createElement("div");
+"Tu esfuerzo sí importa ❤️",
 
-    corazon.innerHTML = "❤️";
+"No tienes que compararte con nadie ❤️",
 
-    corazon.style.position = "fixed";
-    corazon.style.left = Math.random() * 100 + "vw";
-    corazon.style.top = "110vh";
-    corazon.style.fontSize = (20 + Math.random() * 15) + "px";
-    corazon.style.pointerEvents = "none";
-    corazon.style.zIndex = "9999";
-    corazon.style.opacity = "0.8";
-    corazon.style.transition = "transform 8s linear, opacity 8s linear";
+"Estoy orgulloso de ti ❤️",
 
-    document.body.appendChild(corazon);
+"Los caminos difíciles también llevan a lugares hermosos ❤️",
 
-    setTimeout(() => {
-        corazon.style.transform = "translateY(-130vh)";
-        corazon.style.opacity = "0";
-    }, 50);
+"Confío en ti incluso cuando tú dudas ❤️",
 
-    setTimeout(() => {
-        corazon.remove();
-    }, 8000);
+"Tu historia recién está empezando ❤️"
+
+];
+
+
+
+document.getElementById("btn").onclick=function(){
+
+
+let mensaje=
+
+mensajes[Math.floor(Math.random()*mensajes.length)];
+
+
+document.getElementById("mensajeMotivador").innerHTML=mensaje;
+
+
+};
+
+
+
+
+
+function crearCorazon(){
+
+
+const c=document.createElement("div");
+
+
+c.className="corazon";
+
+
+c.innerHTML="❤️";
+
+
+c.style.left=Math.random()*100+"vw";
+
+
+c.style.fontSize=(15+Math.random()*20)+"px";
+
+
+document.body.appendChild(c);
+
+
+
+setTimeout(()=>{
+
+c.remove();
+
+},8000);
+
+
 }
 
-setInterval(crearCorazon, 800);
+
+
+setInterval(crearCorazon,900);
+
 
 
 </script>
 
-</script>
 
 
 </body>
+
 </html>
